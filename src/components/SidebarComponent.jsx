@@ -3,7 +3,7 @@ import React from "react";
 import EditDeleteDropDownComponent from "./EditDeleteDropDownComponent";
 import WorkspacePopupComponent from "./WorkspacePopupComponent";
 import Link from "next/link";
-import { getAllWorkSpaceService, getFavorite } from "@/service/auth/workSpace.service";
+import { getAllWorkSpaceService } from "@/service/auth/workSpace.service";
 
 export default async function SidebarComponent() {
   const workSpace = await getAllWorkSpaceService();

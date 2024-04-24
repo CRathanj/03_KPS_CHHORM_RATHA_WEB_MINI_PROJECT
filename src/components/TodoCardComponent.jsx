@@ -15,7 +15,7 @@ export default function TodoCardComponent() {
               height={20}
               alt={"edit delete card"}
             /> */}
-            <EditDeleteDropDownComponent />
+            <EditDeleteDropDownComponent/>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ export default function TodoCardComponent() {
       </div>
 
       <hr className="text-gray" />
-      <div className="flex gap-2 justify-end pr-3 py-2">
+      <div className="flex gap-2 justify-between px-3 py-2">
         <Image
           src={"/assets/icons/calendar.svg"}
           width={20}

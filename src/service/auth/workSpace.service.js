@@ -15,8 +15,14 @@ export async function getAllWorkSpaceService (){
 };
 
 
-export async function getWorkSpaceById(id){
-    const res = await fetch(`https://movie-api-get-only-bmc3.vercel.app/api/${id}`);
+export async function getWorkSpaceById({params :{id}}){
+    const session = await getServerSession(authOption);
+    const res = await fetch(`https://movie-api-get-only-bmc3.vercel.app/api/${id}`,{
+        method: "GET",
+        headers: {
+            Authorization: `bearer ${session?.user?.token}`
+        }
+    });
     const data = await res.json();
     return data;
 };

@@ -4,8 +4,8 @@ import React from 'react'
 
 const page = () => {
   return (
-    <div className='m-5 flex w-full'>
-      <div className='w-[100%]'>
+    <div className='flex w-full'>
+      <div className=' p-10 w-[100%]'>
         <ListBoardComponentHeader />
         <div>
           <div className='bg-yellow-300 h-42 p-3 m-5 rounded-xl'>
